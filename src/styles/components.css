@@ -995,13 +995,16 @@
         filter: drop-shadow(0 0 12px rgba(62,155,255,0.22));
       }
 
-      /* ---------- Services (Four Pillars) ---------- */
-      .pillars {
+      /* ---------- Services ---------- */
+      .services-layout {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
         gap: 2px;
         background: var(--line-soft);
         border: 1px solid var(--line-soft);
+      }
+      .pillars {
+        min-width: 0;
       }
       .pillar-card {
         background: var(--void);
@@ -1033,6 +1036,41 @@
       .pillar-card p {
         color: var(--muted);
         font-size: 14.5px;
+      }
+      .service-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: var(--line-soft);
+      }
+      .service-highlight {
+        position: relative;
+        padding: 30px 28px 28px 48px;
+        background: var(--panel-alt);
+      }
+      .service-highlight::before {
+        content: '';
+        position: absolute;
+        top: 35px;
+        left: 28px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--blue);
+        box-shadow: 0 0 14px var(--blue-glow);
+      }
+      .service-highlight h3 {
+        margin-bottom: 10px;
+        color: var(--text);
+        font-size: 17px;
+      }
+      .service-highlight p {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.65;
       }
 
       /* ---------- Why SkyPixels ---------- */
@@ -1542,7 +1580,7 @@
           top: -200px;
           right: -200px;
         }
-        .pillars,
+        .services-layout,
         .compliance-grid {
           grid-template-columns: 1fr;
         }

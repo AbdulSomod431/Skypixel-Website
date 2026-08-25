@@ -34,19 +34,29 @@ function ServiceCard({ service }) {
   );
 }
 
-export default function Services({ items }) {
+export default function Services({ items, highlights }) {
   return (
     <section id="services">
       <div className="wrap">
         <SectionHeader
           eyebrow="What We Offer"
-          title="Four pillars of brand visibility"
+          title="What we create"
           description="From the sky to the street - a complete outdoor advertising ecosystem built for maximum impact."
         />
-        <div className="pillars">
-          {items.map((service) => (
-            <ServiceCard key={service.title} service={service} />
-          ))}
+        <div className="services-layout">
+          <div className="pillars">
+            {items.map((service) => (
+              <ServiceCard key={service.title} service={service} />
+            ))}
+          </div>
+          <ul className="service-highlights">
+            {highlights.map((highlight) => (
+              <li className="service-highlight reveal" key={highlight.title}>
+                <h3>{highlight.title}</h3>
+                <p>{highlight.description}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

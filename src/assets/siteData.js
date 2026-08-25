@@ -70,29 +70,33 @@ export const services = [
     image: '/images/services/drone-layout.jpg',
     alt: 'Drone formation',
   },
+];
+
+export const serviceHighlights = [
   {
-    tag: 'Digital Outdoor',
-    title: 'HD LED Billboards & Smart Signage',
-    description:
-      'Programmatic and interactive outdoor media platforms with high-definition LED displays in premium locations.',
-    image: '/images/HD LED.jpg',
-    alt: 'SkyPixels display over water',
+    title: 'Brand Logos',
+    description: 'Put your logo above thousands of spectators.',
   },
   {
-    tag: 'Outdoor Infrastructure',
-    title: 'Billboards, Unipoles & Street Furniture',
-    description:
-      'Large format static structures, bridge panels, wall wraps, and transit advertising platforms.',
-    image: '/images/Billboards.jpg',
-    alt: 'Outdoor billboard structure',
+    title: 'Product Reveals',
+    description: 'Reveal a new product through a choreographed aerial sequence.',
   },
   {
-    tag: 'Brand Activation',
-    title: 'Experiential Marketing & Product Launches',
+    title: '3D Objects',
+    description: 'Cars, phones, bottles, characters, landmarks and more.',
+  },
+  {
+    title: 'Animated Stories',
+    description: 'Tell a story through a sequence of moving formations.',
+  },
+  {
+    title: 'Messages & Numbers',
+    description: 'Display words, dates, numbers and campaign messages.',
+  },
+  {
+    title: 'Event Moments',
     description:
-      'Event-based promotional campaigns and immersive experiential installations designed to drive engagement and brand recall.',
-    image: '/images/Experimental marketing.jpg',
-    alt: 'Brand activation event',
+      'Birthdays, weddings, concerts, festivals, national celebrations and corporate events.',
   },
 ];
 

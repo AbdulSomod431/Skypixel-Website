@@ -16,6 +16,7 @@ import {
   navLinks,
   teamMembers,
   services,
+  serviceHighlights,
   whyFeatures,
   comparisonRows,
   portfolioItems,
@@ -78,7 +79,7 @@ export default function App() {
           members={teamMembers}
           downloadProfile={SITE.downloadProfile}
         />
-        <Services items={services} />
+        <Services items={services} highlights={serviceHighlights} />
         <WhySection features={whyFeatures} comparisonRows={comparisonRows} />
         <Portfolio items={portfolioItems} onOpenVideo={setActiveVideo} />
         <VideoLightboxModal open={Boolean(activeVideo)} src={activeVideo} onClose={() => setActiveVideo(null)} />
